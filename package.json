@@ -8,7 +8,7 @@
     "compile": "babel ./src -d ./lib",
     "watch": "babel ./src --watch -d ./lib",
     "prepublish": "npm run compile",
-    "preinstall": "npm run compile",
+    "install": "npm run compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "yositosi",
