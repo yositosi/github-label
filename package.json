@@ -5,10 +5,9 @@
   "main": "github-label.js",
   "bin": "./lib/github-label.js",
   "scripts": {
-    "compile": "babel src -d lib",
-    "watch": "babel src --watch -d lib",
+    "compile": "babel --presets es2015 ./src -d ./lib",
+    "watch": "babel --presets es2015 ./src --watch -d ./lib",
     "prepublish": "npm run compile",
-    "preinstall": "npm run compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "yositosi",
