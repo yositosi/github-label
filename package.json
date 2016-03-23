@@ -1,0 +1,30 @@
+{
+  "name": "github-label",
+  "version": "0.0.1",
+  "description": "",
+  "main": "github-label.js",
+  "bin": "./lib/github-label.js",
+  "scripts": {
+    "compile": "babel ./src -d ./lib",
+    "watch": "babel ./src --watch -d ./lib",
+    "prepublish": "npm run compile",
+    "preinstall": "npm run compile",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yositosi",
+  "license": "MIT",
+  "dependencies": {
+    "octonode": "^0.7.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-preset-es2015": "^6.3.13",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^4.0.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}
